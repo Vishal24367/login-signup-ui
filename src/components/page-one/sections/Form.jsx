@@ -8,9 +8,9 @@ import EyeIcon from "../ui/EyeIcon";
 const Form = () => {
   return (
     <div className="basis-full">
-      <div className="mx-[6px] my-0">
+      <div className="mx-[6px]">
         <form noValidate>
-          <InputLayout label="Email">
+          <InputLayout label="Email Address">
             <Input type="text" placeholder="name@example.com" name="email" />
           </InputLayout>
           <InputLayout label="Password">
