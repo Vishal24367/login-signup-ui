@@ -9,18 +9,14 @@ import Footer from "../../components/page-one/sections/Footer";
 import Navbar from "../../components/page-one/sections/Navbar";
 
 const PageOne = () => {
-  // const location = useLocation();
-  // const { pathname } = location;
   return (
-    <div className="flex min-h-full w-full flex-col justify-between justify-items-stretch">
+    <div className="flex min-h-full w-full select-none flex-col justify-between lg:select-auto">
       <Navbar />
-      <div>
-        <Routes>
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/recovery" element={<Recovery />} />
-          <Route path="/" element={<Navigate replace to="/page-one/login" />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/recovery" element={<Recovery />} />
+        <Route path="/" element={<Navigate replace to="/page-one/login" />} />
+      </Routes>
       <Footer />
     </div>
   );

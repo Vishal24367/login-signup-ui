@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row items-center justify-between px-[22px] pt-[22px] sm:p-[33px]">
+    <div className="mb-[33px] flex flex-row items-center justify-between px-[22px] pt-[22px] sm:p-[33px]">
       <button
         type="button"
         className="flex cursor-pointer flex-row font-sans text-[16px] font-medium leading-[22px] text-[#313131] sm:text-[14px]"

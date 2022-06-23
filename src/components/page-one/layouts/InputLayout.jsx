@@ -6,8 +6,8 @@ import Label from "../sections/Label";
 
 const InputLayout = props => {
   return (
-    <>
-      <Label label={props.label} />
+    <div className={props.className}>
+      {props.label && <Label label={props.label} />}
       <div className="relative m-0 mb-6 box-border pt-[11px] font-sans">
         <div className="relative my-0 mx-[-6px] flex items-center justify-between py-0 px-[6px]">
           {props.children}
@@ -15,7 +15,7 @@ const InputLayout = props => {
         <ErrorText error={props.error} />
         <HorizontalBar />
       </div>
-    </>
+    </div>
   );
 };
 
